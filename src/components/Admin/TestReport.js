@@ -245,13 +245,13 @@ function TestReport(props) {
       // if Total_Score column is not present in google sheet, the below code will execute
       // fetching an sheet db api to access the required data in google sheet
       fetch(
-        `https://sheetdb.io/api/v1/8bznvdqw13pug/Email_Address/${item.Email_Address}`,
+        `https://sheetdb.io/api/v1/4c3fbfomg38uv/Email_Address/${item.Email_Address}`,
         {
           method: "PATCH",
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: "Bearer x110c3h0nc8k5cr50vr5m3gz3bhc43ccvze0s4t5",
+            Authorization: "Bearer  00icuozoymtuvwdrtuhdsrx2y78g6tx4a7m5eptx",
           },
           // in body we need to add all the required data to update it in google sheet
           body: JSON.stringify({
