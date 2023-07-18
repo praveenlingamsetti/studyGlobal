@@ -304,11 +304,46 @@ th {
     width: 300px;
   }
   .details {
-    font-size: 18px;
+    font-size: 16px;
   }
   .send {
     width: 70px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .send {
+    margin-bottom: 10px;
+    margin-right: 30px;
+    width: 120px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .charts {
+    width: 300px;
+  }
+  .details {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .charts {
+    width: 220px;
+  }
+  .details {
+    font-size: 12px;
+  }
+  .send {
+    width: 80px;
+    font-size: 10px;
   }
 }
 
