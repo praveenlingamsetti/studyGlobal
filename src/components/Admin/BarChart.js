@@ -97,7 +97,7 @@ function StudentBarChart() {
   // generatePdf function used to generate the pdf which includes student details along with all streams aptitude and interest scores piechart when clicking on the download button in the component
   const generatePdf = useReactToPrint({
     content: () => detailsPdf.current,
-    documentTitle: data.Email_Address.slice(0, data.Email_Address.indexOf("@")),
+    documentTitle: data.Full_Name,
     //onAfterPrint: () => alert("pdf downloaded"),
   });
   // handle Submit function used to sent email to students regarding candidate details and scores through email
@@ -269,14 +269,14 @@ function StudentBarChart() {
                       <tr key={index}>
                         <td>{item[0]}</td>
                         <td>
-                          {item[1] > 0 && item[1] < 2
+                          {item[1] >= 0 && item[1] < 2
                             ? "Low"
                             : item[1] > 1 && item[1] < 4
                             ? "Medium"
                             : "High"}
                         </td>
                         <td>
-                          {item[2] > 0 && item[2] < 6
+                          {item[2] >= 0 && item[2] < 6
                             ? "Low"
                             : item[2] > 5 && item[2] < 11
                             ? "Medium"
